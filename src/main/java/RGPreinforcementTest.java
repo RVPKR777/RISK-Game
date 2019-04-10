@@ -130,7 +130,7 @@ public class RGPreinforcementTest {
 	@Test
 	public void  placeReinforceArmiesCheaterTest(){
 		
-		int i = 1;
+		int i = 0;
 		List<List<String>> country_per_player = new ArrayList<List<String>>();
 		List<String> country_per_player1 = new ArrayList<String>();
 		List<String> country_per_player2 = new ArrayList<String>();
@@ -148,7 +148,7 @@ public class RGPreinforcementTest {
 		army_per_country.put("Bang",9);
 		
 		HashMap<String, Integer> armyCheater = ra.placeReinforceArmiesCheater(i, country_per_player, army_per_country);
-		assertEquals(15,armyCheater.get("India"));
+		assertEquals( 15, (int)armyCheater.get("India"));
 		
 	}
 	
@@ -173,7 +173,7 @@ public class RGPreinforcementTest {
 		army_per_country.put("Bang",9);
 		
 		HashMap<String, Integer> armyCheater = ra.placeReinforceArmiesCheater(i, country_per_player, army_per_country);
-		assertEquals(15,armyCheater.get("India"));
+		assertEquals(15,(int)armyCheater.get("India"));
 		
 	}
 	
@@ -198,7 +198,7 @@ public class RGPreinforcementTest {
 		army_per_country.put("Bang",9);
 		
 		HashMap<String, Integer> armyCheater = ra.placeReinforceArmiesCheater(i, country_per_player, army_per_country);
-		assertEquals(15,armyCheater.get("India"));
+		assertEquals(15,(int)armyCheater.get("India"));
 		
 	}
 	
@@ -223,7 +223,7 @@ public class RGPreinforcementTest {
 		army_per_country.put("Bang",9);
 		
 		HashMap<String, Integer> armyCheater = ra.placeReinforceArmiesCheater(i, country_per_player, army_per_country);
-		assertEquals(15,armyCheater.get("India"));
+		assertEquals(15,(int)armyCheater.get("India"));
 		
 	}
 	
